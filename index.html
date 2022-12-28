@@ -4,15 +4,55 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@100;300;700&display=swap" rel="stylesheet">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
     <link rel="stylesheet" href="css/styles.css">
     <title>Iñaki Zárate</title>
 </head>
 <body>
-    <head>
-        <nav>
-            <a href="index.html">IÑAKI ZÁRATE</a>
-        </nav>
-    </head>
+  <nav class="navbar">
+    <div class="left">
+        <h2>Iñaki Zarate</h2>
+    </div>
+    <div class="right">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkBtn">
+            <i class="fa fa-bars">menu</i>
+        </label>
+        <ul class="list">
+            <li><a href="index.html" id="home-link" class="link">HOME</a></li>
+            <li><a href="pags/sobre-mi.html" id="sobre-link" class="link">SOBRE MI</a></li>
+            <li><a href="pags/proyectos.html" id="proyectos-link" class="link">PROYECTOS</a></li>
+            <li><a href="pags/contacto.html" id="contacto-link" class="link">CONTACTO</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="general">
+
+      <section id="home" class="home">
+        <img src="img/Web Developer_Outline.png" alt="logo">
+        <h1>IÑAKI ZÁRATE</h1>
+        <p>Desarrollador Front-End</p>
+      </section>
+
+
+
+    </div>
+
+    <footer>
+      <div class="marca">
+        <p>IÑAKI ZÁRATE 2023</p>
+      </div>
+      <div class="redes">
+        <a href=""><img src="img/instagram.svg" alt="instagram"></a>
+        <a href=""><img src="img/whatsapp.svg" alt="linkedin"></a>
+        <a href=""><img src="img/github-alt.svg" alt="GitHub"></a>
+      </div>
+    </footer>
+    <script src="js/app.js"></script>
 </body>
 </html>
