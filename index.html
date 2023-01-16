@@ -5,30 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Martian+Mono:wght@200;300;700&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link
     rel="stylesheet"
     href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
   />
+
+  <script src="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/js/swiffy-slider.min.js" crossorigin="anonymous" defer></script>
+<link href="https://cdn.jsdelivr.net/npm/swiffy-slider@1.6.0/dist/css/swiffy-slider.min.css" rel="stylesheet" crossorigin="anonymous">
     <link rel="stylesheet" href="css/styles.css">
     <title>Iñaki Zárate</title>
 </head>
 <body>
   <nav class="navbar">
     <div class="left">
-        <h2>Iñaki Zarate</h2>
+        <a href="index.html"><img src="img/Diseño sin título (7).png" alt="iñaki zarate"></a>
     </div>
     <div class="right">
         <input type="checkbox" id="check">
         <label for="check" class="checkBtn">
-            <i class="fa fa-bars">menu</i>
+            <i class="fa fa-bars"></i>
         </label>
         <ul class="list">
-            <li><a href="index.html" id="home-link" class="link">HOME</a></li>
-            <li><a href="pags/sobre-mi.html" id="sobre-link" class="link">SOBRE MI</a></li>
-            <li><a href="pags/proyectos.html" id="proyectos-link" class="link">PROYECTOS</a></li>
-            <li><a href="pags/contacto.html" id="contacto-link" class="link">CONTACTO</a></li>
+           
+            <li><a href="#sobre-mi" id="sobre-link" class="link">SOBRE MI</a></li>
+            <li><a href="#mis-proyectos" id="proyectos-link" class="link">PROYECTOS</a></li>
+            <li><a href="#contacto" id="contacto-link" class="link">CONTACTO</a></li>
         </ul>
     </div>
 </nav>
@@ -37,10 +40,133 @@
 <div class="general">
 
       <section id="home" class="home">
-        <img src="img/Web Developer_Outline.png" alt="logo" class="animate__animated animate__bounceInDown wow">
-        <h1 class="animate__animated animate__fadeInLeftBig wow">IÑAKI ZÁRATE</h1>
-        <p class="animate__animated animate__fadeInLeft wow">Desarrollador Front-End</p>
+        <img src="img/Web Developer_Outline.png" alt="logo" class="img-home animate__animated animate__bounceInDown wow">
+
+        <div>
+          <h1 class="animate__animated animate__fadeInLeftBig">¡HOLA MUNDO!</h1>
+          <p class="typing-text">Jr. Front-End Dev.</p>
+          <button class="cv animate__animated animate__fadeInLeftBig">
+            <p>Descargar CV</p>
+            <img src="img/import.svg" id="img-download" alt="download">
+          </button>
+        </div>
+        
       </section>
+      <!-- SOBRE MI -->
+
+      <section id="sobre-mi" class="sobre-mi">
+
+        <div class="info">
+          <h3 class="sobre-titulo">SOBRE MI</h3>
+          
+          <img class="animate__animated animate__slideInDown wow" src="../img/Web Developer_Flatline.png" alt="">
+            <span class="animate__animated animate__slideInUp wow">
+                <p class="animate__animated animate__fadeIn">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab neque voluptatum laudantium perferendis, velit dolorum consequatur veniam non cupiditate nisi excepturi ex ipsam voluptas odio vitae molestias eligendi aliquid nesciunt?</p>
+            </span>
+            <h4 class="hab-tit">Mis Habilidades</h4>
+        </div>
+
+      
+
+
+        <!-- slider -->
+        <div class="animate__animated animate__fadeInRight wow swiffy-slider slider-item-show4 slider-nav-outside slider-nav-dark slider-nav-sm slider-nav-visible slider-nav-page slider-item-snapstart slider-nav-autoplay slider-nav-autopause slider-item-ratio slider-item-ratio-contain slider-item-ratio-32x9 bg-white shadow-lg py-3 py-lg-4" data-slider-nav-autoplay-interval="3000">
+          <div class="slider-container">
+              <div><img src="img/html-5.png" alt="html"></div>
+              <div><img src="img/css-3.png" loading="lazy" alt="css"></div>
+              <div><img src="img/js.png" loading="lazy" alt="JavaScript"></div>
+              <div><img src="img/bootstrap.png" loading="lazy" alt="bootstrap"></div>
+              <div><img src="img/sass.png" loading="lazy" alt="sass"></div>
+              <div><img src="img/git.png" loading="lazy" alt="git"></div>
+              <div><img src="img/github-alt.svg" loading="lazy" alt="GitHub"></div>
+              <div><img src="img/1631110818-logo-react-js.png" loading="lazy" alt="react.js"></div>
+              <div><img src="img/pngwing.com.png" loading="lazy" alt="jquery"></div>
+              <div><img src="img/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e5e7537.0464945815246930703869.png" loading="lazy" alt="jquery"></div>
+          </div>
+      
+          <button type="button" class="slider-nav" aria-label="Go left"></button>
+          <button type="button" class="slider-nav slider-nav-next" aria-label="Go left"></button>
+      
+      </div>
+
+
+  
+        
+          
+
+        
+        
+      </section>
+<!-- proyectos -->
+
+<section id="mis-proyectos" class="mis-proyectos">
+  <h3>Mis Proyectos</h3>
+
+<div class="cont-proyectos">
+<div class="proyectos animate__animated animate__fadeIn wow">
+<div class="proyectos-card">
+<h4>Calculadora</h4>
+<img src="../img/Calculator_Outline.png" alt="">
+<p>HTML, CSS, Javascript</p>
+<a href="https://inakizarate25.github.io/Calculadora/">ir al proyecto</a>
+</div>
+</div>
+
+<div class="proyectos">
+<div class="proyectos-card animate__animated animate__fadeIn wow">
+<h4>Carrito de compras</h4>
+<img src="../img/Shopping cart_Flatline.png" alt="">
+<p>HTML, CSS, Javascript</p>
+<a href="https://inakizarate25.github.io/Proyecto-javascript/">ir al proyecto</a>
+</div>
+</div>
+
+<div class="proyectos animate__animated animate__fadeIn wow">
+<div class="proyectos-card">
+<h4>En desarrollo...</h4>
+<img src="../img/Loading _Outline.png" alt="">
+<!-- <a href="#">ir al proyecto</a> -->
+</div>
+</div>
+</div>
+  
+</section>
+<!-- contacto -->
+
+<section class="contacto animate__animated animate__fadeIn wow" id="contacto">
+  <h4>Contacto</h4>
+  <div class="form">
+    <form>
+      <div>
+        <label for="nombre">Nombre y apellido</label>
+        <input class="input" type="text" name="nombre" id="nombre">
+      </div>
+
+      <div>
+        <label for="mail">E-mail</label>
+        <input class="input" type="email" name="mail" id="mail">
+      </div>
+
+      <div>
+        <label for="tel">Telefono</label>
+        <input class="input" type="text" name="tel" id="tel">
+      </div>
+      <input type="submit" name="enviar" id="enviar">
+
+      <div class="datos">
+          <div class="datos1">
+              <img src="../img/envelope.svg" alt="mail">
+              <p>inakizarate.dev@gmail.com</p>
+          </div>
+
+          <div class="datos1">
+              <img src="../img/phone.svg" alt="celulR">
+              <p>+54 1121882949</p>
+          </div>
+      </div>
+    </form>
+  </div>
+</section>
 
 
 
@@ -56,6 +182,9 @@
         <a href=""><img src="img/github-alt.svg" alt="GitHub"></a>
       </div>
     </footer>
+
+
+    
 
 
 
