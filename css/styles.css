@@ -44,9 +44,11 @@ body {
 }
 .left a {
   text-decoration: none;
+
 }
 .left a img {
   padding-top: 26px;
+  z-index: 1000000;
 }
 
 .checkBtn {
@@ -68,7 +70,7 @@ body {
 .right ul {
     display: flex;
     list-style: none;
-    z-index: 10000;
+    z-index: 100;
 }
 
 .right ul li a {
@@ -98,7 +100,7 @@ body {
         position: fixed;
         top: 4rem;
         left: 100%;
-        transition: all 1s;
+        transition: all .5s;
         z-index: 10000;
         padding:25% 0;
     }
@@ -114,9 +116,8 @@ body {
     #check:checked~ul {
         left: 0%;
     }
-
-    .none{
-      display: none;
+    .link-out{
+      left: 100%;
     }
 }
  
@@ -355,7 +356,7 @@ h1 {
     height: auto;
     width: 99%;
     background-color: var(--dark-blue);
-    gap: 50px;
+    gap: 100px;
     margin: 100px auto 50px;
 
 
